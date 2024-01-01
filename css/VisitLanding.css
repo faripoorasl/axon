@@ -1,0 +1,1836 @@
+@import url(https://db.onlinewebfonts.com/c/002254488ce1877d55ad3693e527ad1e?family=IRANSansWeb);
+* {
+    direction: rtl;
+    font-family: "IRANSansWeb";
+}
+
+body {
+    font-family: "IRANSansWeb";
+    margin-bottom: 7rem;
+    background-color: #F6F8FA;
+}
+
+.container {
+    margin: 0 1rem;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #FFF;
+    position: sticky;
+    top: 0;
+}
+
+.header__home-link {
+    width: 5.625rem;
+    height: 1.1875rem;
+}
+
+.summary {
+    background: #F5FAFF;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    margin: 1.5rem 0;
+}
+
+.summary__physician {
+    color: #031E32;
+    background: #EAF4FF;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.summary__physician__name {
+    font: 500 0.875rem/1.5rem IRANSansWeb;
+    margin-bottom: 0.5rem;
+}
+
+.summary__physician__info {
+    font: 400 0.75rem/1.3rem IRANSansWeb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.summary__physician__info__date--mobile {
+    display: block;
+}
+
+.summary__physician__date--mobile {
+    font: 400 0.75rem IRANSansWeb;
+}
+
+.summary__prescription__first-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.summary__prescription__date {
+    display: none;
+}
+
+.summary__prescription__date__icon {
+    margin-left: 0.375rem;
+}
+
+.summary__prescription__date__text {
+    font: 500 0.875rem/1.5rem IRANSansWeb;
+    color: #636363;
+    margin-top: 0.1875rem;
+}
+
+.summary__prescription__tracking-code {
+    border-radius: 20rem;
+    background: #EAF4FF;
+    color: #2F455C;
+    padding: 0.25rem 0.375rem;
+    font: 400 0.875rem IRANSansWeb;
+    width: 100%;
+    height: 1.875rem;
+    text-align: center;
+}
+
+.summary__prescription__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font: 400 0.75rem/1.3rem IRANSansWeb;
+    color: #2F455C;
+    list-style: unset;
+    padding-right: 0.75rem;
+}
+
+.summary__prescription__list__item {
+    width: 50% !important;
+    text-align: right !important;
+    margin-bottom: 1rem !important;
+}
+
+.summary__prescription__patient-info__age--desktop {
+    display: none;
+}
+
+.summary__prescription__patient-info__age--mobile {
+    border: none !important;
+}
+
+.summary__prescription__insurance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.summary__prescription__insurance--mobile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.summary__prescription__insurance__common {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.summary__prescription__insurance__name--mobile {
+    min-width: 9rem;
+    width: calc(100vw - 16rem);
+}
+
+.summary__prescription__insurance__coverage--mobile {
+    white-space: nowrap;
+    color: #8D8D8D;
+}
+
+.summary__prescription__insurance__hid--desktop,
+.summary__prescription__insurance__hid--mobile {
+    color: #4A6C90;
+}
+
+.summary__prescription__insurance__hid--mobile {
+    min-width: 6.5rem;
+    text-align: left;
+}
+
+.summary__prescription__insurance__name--mobile,
+.summary__prescription__insurance__coverage--mobile {
+    line-height: 1.75rem;
+}
+
+.summary__prescription__patient-info {
+    display: flex;
+    width: calc(100% - 8rem);
+    margin-bottom: 1rem;
+}
+
+.summary__prescription__patient-info__name--desktop,
+.summary__prescription__patient-info__age--desktop {
+    display: none;
+}
+
+.summary__prescription__patient-info__age {
+    border-right: 1px solid #B8B8B8;
+    margin-right: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.summary__prescription__patient-info__national-code {
+    width: 7.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.prescription-buttons--desktop {
+    display: none !important;
+}
+
+.prescription-buttons--mobile {
+    display: flex !important;
+    justify-content: right;
+    margin-top: 0.75rem;
+}
+
+.physician-advice {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    background: #fff;
+    margin-top: 2rem;
+}
+
+.physician-advice__title {
+    color: #4A6C90;
+    font: 500 0.875rem/1.5rem IRANSansWeb;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.375rem;
+}
+
+.physician-advice__title__icon {
+    margin-left: 0.375rem;
+    height: 1.25rem;
+}
+
+.physician-advice__content {
+    color: #2F455C;
+    font: 400 0.75rem/1.3rem IRANSansWeb;
+}
+
+.delivery-banner {
+    background: url('/assets/drug-delivery-mobile.svg') no-repeat;
+    border-radius: 0.75rem;
+    background-size: cover;
+    background-position: bottom;
+    color: #fff;
+    padding: 0.75rem;
+    position: relative;
+    max-height: 9.0625rem;
+    overflow: hidden;
+}
+
+.delivery-banner__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 11.5rem;
+    height: 39vw;
+    max-height: 14rem;
+}
+
+.delivery-banner__badge--mobile {
+    color: #fff;
+    background: #3F84D2;
+    padding: 0.3125rem 0.75rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20rem;
+    font: 500 0.625rem IRANSansWeb;
+    position: absolute;
+    left: 0.75rem;
+    top: 0.75rem;
+}
+
+.delivery-banner__badge--desktop {
+    display: none;
+}
+
+.delivery-banner__vector--mobile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 7rem;
+    height: calc(100% - 5.25rem);
+}
+
+.delivery-banner__vector--desktop {
+    display: none;
+}
+
+.delivery-banner__title {
+    font: 600 0.875rem/1.5rem IRANSansWeb;
+    max-width: 50%;
+    margin-bottom: 0.25rem;
+}
+
+.delivery-banner__description {
+    font: 400 0.75rem/1.3rem IRANSansWeb;
+    margin-bottom: 0.75rem;
+}
+
+.delivery-banner__order-button {
+    color: #2E74C3;
+    background: #EFF6FF;
+    border-radius: 0.5rem;
+    border: none;
+    font: 500 0.875rem/1.5rem IRANSansWeb;
+    width: 9.5625rem;
+    height: 2.3125rem;
+    cursor: pointer;
+    display: flex;
+    gap: 0.375rem;
+    align-items: center;
+    justify-content: center;
+}
+
+    .delivery-banner__order-button img {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+.drug-prescription__header,
+.lab-prescription__header,
+.clinical-services-prescription__header,
+.imaging-prescription__header {
+    color: #2F455C;
+    background: #E4EFFA;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1rem 0.75rem;
+    font: 500 0.875rem/1.5rem IRANSansWeb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drug-prescription__header__title,
+.lab-prescription__header__title,
+.clinical-services-prescription__header__title,
+.imaging-prescription__header__title {
+    display: flex;
+}
+
+.drug-prescription__header__title__icon,
+.lab-prescription__header__title__icon,
+.clinical-services-prescription__header__title__icon,
+.imaging-prescription__header__title__icon {
+    height: 100%;
+    margin-left: 0.25rem;
+}
+
+.drug-prescription__header__label,
+.lab-prescription__header__label,
+.clinical-services-prescription__header__label,
+.imaging-prescription__header__label {
+    color: #4A6C90;
+    padding: 0.25rem 0.5rem;
+    border-radius: 20rem;
+    font: 500 0.625rem/1.1rem IRANSansWeb;
+}
+
+.drug-prescription__body,
+.lab-prescription__body,
+.clinical-services-prescription__body,
+.imaging-prescription__body {
+    background-color: #fff;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 0.5rem 0.75rem 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.drug-prescription__first__row,
+.lab-prescription__first__row,
+.clinical-services-prescription__first__row,
+.imaging-prescription__first__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drug__prescription__date,
+.lab__prescription__date,
+.clinical-services__prescription__date,
+.imaging__prescription__date {
+    display: flex;
+    align-items: center;
+}
+
+.drug__prescription__date__icon,
+.lab__prescription__date__icon,
+.clinical-services__prescription__date__icon,
+.imaging__prescription__date__icon {
+    margin-left: 0.375rem;
+}
+
+.drug__prescription__date__text,
+.lab__prescription__date__text,
+.clinical-services__prescription__date__text,
+.imaging__prescription__date__text {
+    font: 500 0.75rem/1.3125rem IRANSansWeb;
+    color: #636363;
+    margin-top: 0.1875rem;
+}
+
+.drug-prescription__tracking-code,
+.lab-prescription__tracking-code,
+.clinical-services-prescription__tracking-code,
+.imaging-prescription__tracking-code {
+    color: #221C54;
+    background: #F3F9FF;
+    font: 500 0.625rem/1.1rem IRANSansWeb;
+    border-radius: 20rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.drug-prescription__expiration-date,
+.lab-prescription__expiration-date,
+.clinical-services-prescription__expiration-date,
+.imaging-prescription__expiration-date {
+    color: #4A6C90;
+    font: 500 0.625rem/1.1rem IRANSansWeb;
+    width: 100%;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #D3DDE8;
+}
+
+.drug-prescription__detail__list {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+.drug-prescription__detail__list__item {
+    color: #2F455C;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    font: 500 0.875rem/1.5rem IRANSansWeb;
+    padding-top: 0.5rem;
+    counter-increment: drug-counter;
+}
+
+    .drug-prescription__detail__list__item:not(:last-child) {
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid #D3DDE8;
+    }
+
+    .drug-prescription__detail__list__item::before {
+        content: counter(drug-counter) ". ";
+        margin-left: 0.25rem;
+    }
+
+.drug-prescription__detail__list__item__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 0.5rem;
+}
+
+.drug-prescription__detail__list__item__name {
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+}
+
+.drug-prescription__detail__list__item__quantity {
+    color: #2F455C;
+    font: 500 0.625rem/1.1rem IRANSansWeb;
+    border: none;
+    border-radius: 20rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.drug-prescription__detail__list__item__actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.drug-prescription__detail__list__item__button,
+.lab-prescription__detail__list__item__button {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    background-color: #F3F7FB;
+    border-radius: 1.5rem;
+    color: #00C5BA;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+.drug-prescription__detail__list__item_description {
+    color: #2F455C;
+    font: 400 0.75rem/1.375rem IRANSansWeb;
+    width: 100%;
+}
+
+.drug-prescription__detail__list__item_description__item {
+    position: relative;
+    padding-right: 0.75rem;
+}
+
+    .drug-prescription__detail__list__item_description__item:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+
+    .drug-prescription__detail__list__item_description__item::before {
+        content: '\2022';
+        font: 400 1.25rem/1.5rem IRANSansWeb;
+        position: absolute;
+        right: 0;
+    }
+
+.drug-prescription__detail__list__item_description__item__title {
+    font: 500 0.75rem/1.375rem IRANSansWeb;
+}
+
+.lab-prescription__detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lab-prescription__detail__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    color: #2F455C;
+    margin: 1.25rem 0;
+    width: 100%;
+    font: 400 0.875rem/1.5rem IRANSansWeb;
+}
+
+    .lab-prescription__detail__list .comma:nth-last-child(1),
+    .lab-prescription__detail__list .comma:nth-last-child(2) {
+        display: none;
+    }
+
+.lab-prescription__detail__list__item:not(:first-child) {
+    margin-left: 0.375rem;
+}
+
+.lab-prescription__quantity {
+    color: #00C5BA;
+    padding: 0 0.5rem;
+    border-right: 1px solid #C4C4C4;
+    font: 700 0.875rem/1.1rem IRANSansWeb;
+}
+
+.lab-prescription__description,
+.imaging-prescription__description {
+    color: #2F455C;
+    background: #F3F9FF;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    font: 400 0.75rem/1.3125rem IRANSansWeb;
+}
+.lab-prescription__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+.lab-prescription__description__title,
+.imaging-prescription__description__title {
+    font: 500 0.75rem/1.3125rem IRANSansWeb;
+    margin-bottom: 0.25rem;
+}
+
+.imaging-prescription__detail,
+.clinical-services-prescription__detail {
+    color: #2F455C;
+}
+
+.imaging-prescription__detail__title,
+.clinical-services-prescription__detail__title {
+    font: 400 0.875rem/1.5rem IRANSansWeb;
+    margin: 0.5rem 0;
+}
+
+.imaging-prescription__detail__list,
+.clinical-services-prescription__detail__list {
+    font: 400 0.75rem/1.3125rem IRANSansWeb;
+}
+
+.imaging-prescription__detail__list__item,
+.clinical-services-prescription__detail__list__item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    counter-increment: clinical-services-counter;
+}
+
+    .imaging-prescription__detail__list__item::before,
+    .clinical-services-prescription__detail__list__item::before {
+        content: counter(clinical-services-counter) ". ";
+        margin-left: 0.25rem;
+    }
+/* .imaging-prescription__detail__list__item__text,
+.clinical-services-prescription__detail__list__item__text {
+    margin-bottom: 0.5rem;
+} */
+.imaging-prescription__quantity {
+    color: #4A6C90;
+    background: #EDF2F6;
+    padding: 0.375rem 0.75rem;
+    border-radius: 20rem;
+    font: 400 0.625rem/1.1rem IRANSansWeb;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+}
+
+.clinical-services-prescription__detail__list__item__label__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.clinical-services-prescription__detail__list__item__label__list__item {
+    color: #4A6C90;
+    background: #EDF2F6;
+    padding: 0.375rem 0.75rem;
+    border-radius: 20rem;
+    font: 400 0.625rem/1.1rem IRANSansWeb;
+    margin: 0 0 0.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.clinical-services-prescription__tick-icon {
+    margin-left: 0.3125rem;
+}
+
+.prescription-buttons {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prescription__button--download,
+.prescription__button--share {
+    padding: 0.5rem 0;
+    border: 1px solid #00C5BA;
+    color: #00C5BA;
+    font: 500 0.875rem/1.5rem IRANSansWeb;
+    background: none;
+    border-radius: 0.5rem;
+    width: calc(50% - 0.5rem);
+    cursor: pointer;
+}
+
+.prescription__button--download--icon,
+.prescription__button--share--icon {
+    display: none;
+    margin-left: 0.5rem;
+}
+
+.next-appointment {
+    background-color: #EFFFFE !important;
+    background-size: cover !important;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+.next-appointment__image--mobile {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 50;
+}
+
+.next-appointment__title {
+    font: 500 0.875rem IRANSansWeb;
+    color: #2F455C;
+    margin-bottom: 0.875rem;
+}
+
+.next-appointment__sub-title {
+    font: 400 0.625rem IRANSansWeb;
+    margin-bottom: 1.125rem;
+    line-height: 1.25rem;
+}
+
+.next-appointment__physician {
+    color: #2F455C;
+    background: #E0F6F6;
+    border-radius: 20rem;
+    padding: 1rem 2rem;
+    position: relative;
+    margin-bottom: 0.25rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.next-appointment__physician__name {
+    font: 700 0.875rem/1.5rem IRANSansWeb;
+    margin-left: 1rem;
+    max-width: 70%;
+}
+
+.next-appointment__physician__specialty {
+    font: 400 0.75rem/1.3125rem IRANSansWeb;
+    max-width: 70%;
+}
+
+.next-appointment__physician {
+    display: unset;
+    background-color: rgba(224, 250, 248, 0.5) !important;
+    z-index: 1;
+}
+
+.next-appointment__content {
+    width: 100%;
+    min-height: 2.25rem !important;
+    margin-top: 0.75rem;
+    z-index: 100;
+    position: relative;
+}
+
+.next-appointment__description {
+    color: #4A6C90;
+    font: 400 0.75rem/1.3125rem IRANSansWeb;
+    margin-bottom: 0.75rem;
+}
+
+.next-appointment__button {
+    color: #00C5BA;
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #00C5BA;
+    padding: 0.5rem 0.5rem;
+    font: 500 0.750rem/1.5rem IRANSansWeb;
+    min-width: 9rem;
+    min-height: 2.25rem;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8125rem;
+    z-index: 100;
+    position: relative;
+}
+
+
+    .next-appointment__button img {
+        width: 15px;
+        height: auto;
+    }
+
+.next-appointment__vector--mobile {
+    margin-left: 1rem;
+}
+
+.next-appointment__vector--desktop {
+    display: none;
+}
+
+.axon-branding__slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    scrollbar-width: none;
+}
+
+.axon-branding__title {
+    font: 700 1rem/1.75rem IRANSansWeb;
+    margin-bottom: 1rem;
+}
+
+.axon-branding__slider__slide {
+    background: #F6F8FA;
+    color: #2F455C;
+    text-align: center;
+    padding: 0.75rem;
+    min-width: 15rem;
+    border-radius: 0.75rem;
+}
+
+    .axon-branding__slider__slide:not(:last-child) {
+        margin-left: 1rem;
+    }
+
+.axon-branding__slider__slide--icon {
+    margin-bottom: 1rem;
+    height: 3.75rem;
+}
+
+.axon-branding__slider__slide--title {
+    font: 500 0.875rem/1.5rem IRANSansWeb;
+    margin-bottom: 0.75rem;
+}
+
+.axon-branding__slider__slide--description {
+    font: 400 0.75rem/1.3125rem IRANSansWeb;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.axon-life {
+    display: flex;
+    align-items: center;
+    border: 1px solid #00C5BA;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.axon-life--info--icon {
+    min-width: 1.25rem;
+    margin-left: 0.25rem;
+}
+
+.axon-life__description {
+    color: #4A6C90;
+    font: 400 0.75rem/1.3125rem IRANSansWeb;
+    margin-left: 0.25rem;
+}
+
+.axon-life__button {
+    color: #FFF;
+    background: #00C5BA;
+    font: 400 0.625rem/1.1rem IRANSansWeb;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    min-width: 4.25rem;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.health-options {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: #FFF;
+    box-shadow: 0px -4px 24px 0px #2F455C0F;
+    z-index: 1000;
+    border-radius: 1.125rem 1.125rem 0 0;
+}
+
+.health-options__container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.health-options__description {
+    font: 400 0.75rem IRANSansWeb;
+    margin-bottom: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.health-options__actions {
+    display: flex;
+    gap: 1rem;
+    height: 2.8125rem;
+}
+
+.health-options__actions__order-button {
+    min-width: 13.5625rem;
+    color: #FFF;
+    background: #00C5BA;
+    font: 500 0.750rem IRANSansWeb;
+    border: none;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+.health-options__actions__order-button__image {
+    width: 1.9375rem;
+    height: 1.9375rem;
+}
+
+.health-options__actions__other-button {
+    width: 100%;
+    color: #00C5BA;
+    font: 500 0.750rem IRANSansWeb;
+    border: none;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    border: 1px solid rgba(0, 197, 186, 1);
+    background: none;
+    cursor: pointer;
+}
+
+.other-options-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.other-options-modal__content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fefefe;
+    padding: 1.25rem 0;
+    box-shadow: 0px -4px 24px 0px #2F455C1F;
+    animation-name: animateBottom;
+    animation-duration: 0.4s;
+    border-radius: 1.125rem 1.125rem 0rem 0rem;
+}
+
+.other-options-modal__content__drug-delivery-disabled {
+    background-color: #FFF8E8;
+    border-radius: 1.125rem;
+    display: flex;
+    padding: 0 1rem;
+    margin: 24px 24px 0 24px;
+    align-items: center;
+}
+
+.other-options-modal__content__drug-delivery-disabled__text {
+    font: 500 0.875rem IRANSansWeb;
+    color: #2F455C;
+    line-height: 1.4375rem;
+}
+
+.other-options-modal__content__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #EDF2F6;
+    padding: 0 1.5rem 1rem 1.5rem;
+}
+
+.other-options-modal__header__title {
+    color: #2F455C;
+    font: 500 0.875rem IRANSansWeb;
+}
+
+.other-options-modal__content__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem 0.5rem;
+    justify-content: center;
+}
+.other-options-modal__content__banner {
+    display: flex;
+    padding: 1.5rem;
+    justify-content: center;
+}
+.other-options-modal__content__banner-image--mobile {
+    display: block;
+}
+
+.other-options-modal__content__banner-image--desktop {
+    display: none;
+} 
+
+.other-options-modal__blocks__tile {
+    background-color: #F6F8FA;
+    border-radius: 1.125rem;
+    text-align: center;
+    padding: 0.9375rem 0.3125rem;
+}
+
+.other-options-modal__blocks__tile-image {
+    width: 1.625rem;
+    height: 1.625rem;
+    background-color: #033e79;
+    border-radius: 1.125rem;
+    margin: 0 auto 1.25rem auto;
+    padding: 0.3125rem;
+}
+
+.other-options-modal__blocks__tile-title {
+    font: 500 0.75rem IRANSansWeb;
+    line-height: 1.25rem;
+    color: #4A6C90;
+}
+
+.other-options-modal__blocks__tile-sub-title {
+    font: 300 0.75rem IRANSansWeb;
+    line-height: 1.25rem;
+    color: #4A6C90;
+}
+
+.other-options-modal__close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tile-image--bg-new-green {
+    background-color: #C4F5F3 !important;
+}
+
+.tile-image--bg-green {
+    background-color: #C7F4CE !important;
+}
+
+.tile-image--bg-pink {
+    background-color: #FDD1E6 !important;
+}
+
+.tile-image--bg-blue {
+    background-color: #CEEDFF !important;
+}
+
+.tile-image--bg-blue {
+    background-color: #CEEDFF !important;
+}
+
+.tile-image--bg-purple {
+    background-color: #D0D2FA !important;
+}
+
+.tile--large {
+    width: 9.6875rem !important;
+}
+
+.tile--medium {
+    width: 6.125rem !important;
+}
+
+.other-options-modal:hover,
+.other-options-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.health-options__actions--dektop {
+    display: none;
+}
+.full-width-tile {
+    flex: 0 0 100%;
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animateBottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        z-index: 1000;
+    }
+
+    .header__home-link {
+        width: 13.4375rem;
+        height: 2.75rem;
+    }
+
+    .bg-white {
+        background-color: #fff;
+        padding: 2rem 0;
+    }
+
+    .container {
+        width: calc(100% - 2rem);
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    .summary {
+        border-radius: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .summary__physician {
+        color: #031E32;
+        background: #EAF4FF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: unset;
+    }
+
+    .summary__physician__name {
+        margin: 0 0 0 1rem;
+        white-space: nowrap;
+        font: 700 1.5rem/2.625rem IRANSansWeb;
+    }
+
+    .summary__physician__info {
+        width: 100%;
+        font: 400 1.25rem/2.1875rem IRANSansWeb;
+        flex-wrap: wrap;
+        border-right: 1px solid #A7BCD2;
+        padding-right: 1rem;
+    }
+
+    .summary__physician__info__date--mobile {
+        display: none;
+    }
+
+    .summary__prescription__first-row {
+        border-bottom: 1px solid #D3DDE8;
+        padding-bottom: 1rem;
+    }
+
+    .summary__prescription__date {
+        display: block;
+        font: 400 1.25rem/2.1875rem IRANSansWeb;
+    }
+
+    .summary__prescription__date__icon {
+        height: 1.125rem;
+    }
+
+    .summary__prescription__date__text {
+        font: 400 1.25rem/2.1875rem IRANSansWeb;
+        color: #031E32;
+        margin-top: 0.1875rem;
+    }
+
+    .summary__prescription__tracking-code {
+        color: #2F455C !important;
+        padding: 0.5rem 1.5rem;
+        font: 500 0.75rem/1.3125rem IRANSansWeb;
+        width: unset;
+        text-align: unset;
+    }
+
+    .summary__prescription__list {
+        font: 400 1.25rem/2.1875rem IRANSansWeb;
+        flex-wrap: unset !important;
+    }
+
+    .summary__prescription__list__item {
+        color: #031E32;
+        display: inline;
+        font: 400 1.25rem/3rem IRANSansWeb;
+        position: relative;
+        padding: 0 1rem;
+        width: unset !important;
+    }
+
+        .summary__prescription__list__item:last-child {
+            padding-left: 0;
+        }
+
+        .summary__prescription__list__item::before {
+            content: '\2022';
+            font: 400 1.75rem/3rem IRANSansWeb;
+            position: absolute;
+            right: 0;
+        }
+
+    .summary__prescription__patient-info__age--mobile {
+        display: none;
+    }
+
+    .summary__prescription__insurance--mobile {
+        display: none;
+    }
+
+    .summary__prescription__insurance__coverage {
+        color: #2F455C;
+    }
+
+    .summary__prescription__insurance__hid--desktop::before {
+        display: none;
+    }
+
+    .summary__prescription__insurance__name--mobile,
+    .summary__prescription__insurance__coverage--mobile,
+    .summary__prescription__insurance__hid--mobile {
+        display: none;
+    }
+
+    .summary__prescription__insurance__name--desktop,
+    .summary__prescription__insurance__coverage--desktop,
+    .summary__prescription__insurance__hid--desktop {
+        display: block;
+    }
+
+    .summary__prescription__patient-info {
+        display: none;
+    }
+
+    .summary__prescription__patient-info__national-code {
+        width: unset;
+        margin-bottom: 0;
+    }
+
+    .summary__physician__date--mobile {
+        display: none;
+    }
+
+    .physician-advice {
+        background: #fff;
+        border-radius: 1.5rem;
+        padding: 0.75rem 1rem;
+        margin-top: 2rem;
+    }
+
+    .physician-advice__title {
+        color: #4A6C90;
+        font: 500 1.25rem/2.1875rem IRANSansWeb;
+    }
+
+    .physician-advice__title__icon {
+        height: 1.5rem;
+    }
+
+    .physician-advice__content {
+        font: 400 1.125rem/2rem IRANSansWeb;
+    }
+
+    .delivery-banner {
+        background: url('/assets/drug-delivery-desktop.svg') no-repeat;
+        border: none;
+        padding: 2rem 2.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        min-height: 13.375rem;
+        border-radius: 0.75rem;
+    }
+
+    .delivery-banner__vector--mobile {
+        display: none;
+    }
+
+    .delivery-banner__vector--desktop {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: calc(min(5vw, 6rem));
+    }
+
+    .delivery-banner__content {
+        min-height: unset;
+        height: unset;
+        max-height: unset;
+        z-index: 1;
+        width: 100%;
+        line-height: 2.0306rem;
+    }
+
+    .delivery-banner__badge--mobile {
+        display: none;
+    }
+
+    .delivery-banner__description__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 2.1875rem;
+        min-width: 24.375rem;
+        max-width: calc(100% - 14rem);
+        max-width: 41rem;
+    }
+
+    .delivery-banner__badge--desktop {
+        position: absolute;
+        left: 1.5rem;
+        top: 1.5rem;
+        color: #FFFFFF;
+        background: rgba(127, 178, 236, 1);
+        padding: 0.25rem 0;
+        width: 6rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20rem;
+        font: 500 0.75rem/1.3125rem IRANSansWeb;
+    }
+
+    .delivery-banner__title {
+        color: #fff;
+        font: 700 1.5rem IRANSansWeb;
+        margin: 0 0 1.5rem;
+    }
+
+    .delivery-banner__description {
+        color: #fff;
+        font: 400 1.25rem IRANSansWeb;
+        margin: 0;
+        width: calc(100% - 6.5rem);
+    }
+
+    .delivery-banner__order-button {
+        font: 700 1rem IRANSansWeb;
+        width: 16.8125rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.375rem;
+    }
+
+    .delivery-banner__order-button__icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .prescription-buttons--desktop {
+        display: flex !important;
+    }
+
+    .prescription-buttons--mobile {
+        display: none !important;
+    }
+
+    .drug-prescription__header,
+    .lab-prescription__header,
+    .imaging-prescription__header,
+    .clinical-services-prescription__header {
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem;
+        font: 500 1.25rem/2.1875rem IRANSansWeb;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .drug-prescription__header__title,
+    .lab-prescription__header__title,
+    .imaging-prescription__header__title,
+    .clinical-services-prescription__header__title {
+        display: flex;
+        align-items: center;
+    }
+
+    .drug-prescription__header__title__icon,
+    .lab-prescription__header__title__icon,
+    .imaging-prescription__header__title__icon,
+    .clinical-services-prescription__header__title__icon {
+        height: 1.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .drug-prescription__header__label,
+    .lab-prescription__header__label,
+    .imaging-prescription__header__label,
+    .clinical-services-prescription__header__label {
+        color: #4A6C90;
+        padding: 0.375rem 0.75rem;
+        border-radius: 20rem;
+        font: 500 0.75rem/1.3125rem IRANSansWeb;
+    }
+
+    .drug-prescription__body,
+    .lab-prescription__body,
+    .imaging-prescription__body,
+    .clinical-services-prescription__body {
+        padding: 0.75rem 0.75rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .drug__prescription__date__text,
+    .lab__prescription__date__text,
+    .imaging__prescription__date__text,
+    .clinical-services__prescription__date__text {
+        font: 500 1rem/1.75rem IRANSansWeb;
+    }
+
+    .drug-prescription__tracking-code,
+    .lab-prescription__tracking-code,
+    .imaging-prescription__tracking-code,
+    .clinical-services-prescription__tracking-code {
+        padding: 0.5rem;
+        font: 500 0.75rem/1.3125rem IRANSansWeb;
+    }
+
+    .drug-prescription__expiration-date,
+    .lab-prescription__expiration-date,
+    .imaging-prescription__expiration-date,
+    .clinical-services-prescription__expiration-date {
+        font: 500 0.875rem/1.5rem IRANSansWeb;
+        padding: 0.25rem 0 1rem;
+    }
+
+    .drug-prescription__detail__list__item {
+        padding-top: 1.25rem;
+    }
+
+        .drug-prescription__detail__list__item:not(:last-child) {
+            padding-bottom: 1rem;
+        }
+
+    .drug-prescription__detail__list__item__quantity {
+        font: 500 0.75rem/1.3125rem IRANSansWeb;
+    }
+
+    .drug-prescription__detail__list__item_description {
+        font: 400 0.875rem/1.5rem IRANSansWeb;
+    }
+
+    .drug-prescription__detail__list__item_description__item__title {
+        font: 500 0.875rem/1.5rem IRANSansWeb;
+    }
+
+    .drug-prescription__detail__list__item,
+    .lab-prescription__detail__list {
+        font: 500 1.25rem/2.1875rem IRANSansWeb;
+    }
+
+    .lab-prescription__quantity {
+        font: 700 1.5rem/1.1rem IRANSansWeb;
+    }
+
+    .lab-prescription__description,
+    .imaging-prescription__description {
+        font: 400 0.875rem/1.5rem IRANSansWeb;
+    }
+
+    .lab-prescription__description__title,
+    .imaging-prescription__description__title {
+        font: 500 1rem/1.75rem IRANSansWeb;
+    }
+
+    .imaging-prescription__detail__title,
+    .clinical-services-prescription__detail__title {
+        font: 500 1.5rem/2.625rem IRANSansWeb;
+        margin: 0.75rem 0;
+    }
+
+    .imaging-prescription__detail__list,
+    .clinical-services-prescription__detail__list {
+        font: 400 1.25rem/2.1875rem IRANSansWeb;
+    }
+
+    .imaging-prescription__detail__list__item__label__list__item,
+    .clinical-services-prescription__detail__list__item__label__list__item {
+        margin: 0 0 0.75rem 0.75rem;
+    }
+
+    .imaging-prescription__detail__list__item__text,
+    .clinical-services-prescription__detail__list__item__text {
+        margin-bottom: 0.75rem;
+    }
+
+    .imaging-prescription__quantity {
+        margin-bottom: 0.75rem;
+    }
+
+    .prescription-buttons {
+        justify-content: flex-end;
+        margin-bottom: 2rem;
+    }
+
+    .prescription__button--download {
+        padding: 0.75rem 0;
+        color: #FFF;
+        background: #00C5BA;
+        width: 12rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2.5rem;
+    }
+
+    .prescription__button--download--icon {
+        display: block;
+    }
+
+    .prescription__button--share {
+        padding: 0.75rem 0;
+        width: 12rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .prescription__button--share--icon {
+        display: block;
+    }
+
+    .next-appointment {
+        background: url('/assets/get-turn-desktop.svg') no-repeat;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+    .next-appointment__image--mobile {
+        display: none;
+    }
+
+    .next-appointment__title {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        color: #2F455C;
+        font: 500 1.5rem IRANSansWeb;
+        margin-bottom: 1rem;
+    }
+
+    .next-appointment__sub-title {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        color: #4A6C90;
+        font: 400 1.25rem IRANSansWeb;
+        margin-bottom: 1.75rem;
+    }
+
+    .next-appointment__physician {
+        height: 5.25rem;
+        color: #2F455C;
+        background: #E0F6F6;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        position: relative;
+        margin-bottom: 1.75rem;
+        /* width: 70%; */
+        max-width: 33rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .next-appointment__physician__name {
+        font: 700 1.5rem IRANSansWeb;
+        margin: 0;
+    }
+
+    .next-appointment__physician__specialty {
+        font: 400 1.25rem IRANSansWeb;
+        margin-right: 1.5rem;
+        padding-right: 1.5rem;
+        border-right: 3px solid #2F455C;
+    }
+
+    .next-appointment__content {
+        width: 40rem;
+        height: 4rem !important;
+        max-width: unset;
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .next-appointment__description {
+        color: #4A6C90;
+        font: 400 0.75rem/1.3125rem IRANSansWeb;
+        margin-bottom: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .next-appointment__button {
+        padding: 0.625rem 3.5rem;
+        font: 500 1rem/1.75rem IRANSansWeb;
+        height: 4rem;
+        width: auto !important;
+    }
+
+        .next-appointment__button img {
+            width: unset;
+            height: auto;
+        }
+
+    .next-appointment__vector--mobile {
+        display: none;
+    }
+
+    .next-appointment__vector--desktop {
+        display: block;
+        max-height: 16rem;
+        position: absolute;
+        top: 1.5rem;
+        left: calc(50% - 27rem);
+        transform: translate(-50%, 0);
+        z-index: 0;
+    }
+
+    .axon-branding__slider {
+        width: calc(100% - 2rem);
+        max-width: 1320px;
+        margin: 0 auto 2rem;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .axon-branding__title {
+        font: 700 2.5rem/4.375rem IRANSansWeb;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .axon-branding__description--mobile {
+        display: none;
+    }
+
+    .axon-branding__description--detail--mobile {
+        display: none;
+    }
+
+    .axon-branding__description--desktop {
+        display: block;
+        text-align: center;
+        color: #373737;
+        font: 400 1.5rem/2.625rem IRANSansWeb;
+        margin-bottom: 1.75rem;
+    }
+
+    .axon-branding__description--detail--desktop {
+        display: block;
+        text-align: center;
+        color: #000;
+        font: 400 0.75rem/1.3125rem IRANSansWeb;
+        margin-bottom: 2.25rem;
+    }
+
+    .axon-branding__slider__slide {
+        background: #F6F8FA;
+        width: calc(100% / 3 - 0.5rem);
+        max-width: 26rem;
+        padding: 2.5rem 1.5rem;
+        margin: 0;
+    }
+
+    .axon-branding__slider__slide--icon {
+        height: 8rem;
+    }
+
+    .axon-branding__slider__slide--title {
+        font: 700 1.5rem IRANSansWeb;
+    }
+
+    .axon-branding__slider__slide--description {
+        font: 400 1.25rem IRANSansWeb;
+        line-height: 1.875rem;
+    }
+
+    .axon-life {
+        display: flex;
+        align-items: center;
+        border: 1px solid #00C5BA;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .axon-life--info--icon {
+        min-width: 1.25rem;
+        margin-left: 1rem;
+    }
+
+    .axon-life__description {
+        font: 400 1rem/1.75rem IRANSansWeb;
+        margin-left: 1rem;
+    }
+
+    .axon-life__button {
+        font: 700 1.25rem/2.1875rem IRANSansWeb;
+        padding: 0.75rem;
+        min-width: 12.75rem;
+    }
+
+    .flex-column-reverse--desktop {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .download-app {
+        justify-content: center;
+        margin-bottom: 0.75rem
+    }
+
+    .download-app--link {
+        max-width: 7.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .download-app--link:not(:last-child) {
+            margin-left: 1rem;
+        }
+
+    .health-options {
+        display: none;
+    }
+
+    .health-options__container {
+        max-width: 1320px;
+    }
+
+    .health-options__description {
+        display: flex;
+        align-items: center;
+        color: #4A6C90;
+        font: 400 1.5rem/2.625rem IRANSansWeb;
+        width: 30.75rem;
+        margin-left: auto;
+        gap: 0.5rem;
+    }
+
+    .health-options__order__button {
+        width: calc(100% - 31.25rem);
+        max-width: 37.5rem;
+    }
+
+    .health-options__actions--dektop {
+        display: flex;
+    }
+
+    .other-options-modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .other-options-modal__content {
+        position: relative;
+        margin: 10% auto 0 auto;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        border-radius: 1.125rem 1.125rem 1.125rem 1.125rem;
+        max-width: 54.875rem;
+    }
+
+    .other-options-modal__content__drug-delivery-disabled {
+        margin: 24px 24px 0 24px;
+    }
+
+    .other-options-modal__content__drug-delivery-disabled__text {
+        font: 500 0.875rem IRANSansWeb;
+        color: #2F455C;
+        line-height: 1.4375rem;
+    }
+
+    .other-options-modal__blocks__tile-image {
+        width: 2.625rem;
+        height: 2.625rem;
+        border-radius: 6.25rem;
+    }
+
+        .other-options-modal__blocks__tile-image img {
+            width: 1.625rem;
+            height: 1.625rem;
+        }
+
+    .other-options-modal__blocks__tile-title {
+        font: 500 0.75rem IRANSansWeb;
+        line-height: 1.25rem;
+        color: #4A6C90;
+    }
+
+    .other-options-modal__blocks__tile-sub-title {
+        font: 300 0.75rem IRANSansWeb;
+        line-height: 1.25rem;
+        color: #4A6C90;
+    }
+
+    .other-options-modal__close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .other-options-modal__content__banner-image--desktop {
+        display: block;
+    }
+
+    .other-options-modal__content__banner-image--mobile {
+        display: none;
+    } 
+    .tile--large {
+        width: 8.25rem !important;
+        min-height: 8.25rem !important;
+    }
+
+    .tile--medium {
+        width: 8.25rem !important;
+        min-height: 8.25rem !important;
+    }
+    .full-width-tile {
+        flex: initial !important;
+    }
+}
